@@ -10,46 +10,50 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
     <header>
-      <section>
+      <section
+        class="sectionHeaderDesc p-3 d-flex aling-content-center text-white justify-content-center"
+      >
         <div>Os melhores cursos de técnologia</div>
       </section>
-      <section>
-        <img src="" alt="logo pequena da emeb cursos" />
-        <ul>
+      <section class="p-4 d-flex justify-content-evenly aling-content-center">
+        <img src="" alt="logo da emeb cursos" />
+        <ul class="liNavbar gap-5">
           <li>Área de Menbros</li>
           <li>Comprar Cursos</li>
           <li>Ajuda</li>
           <li>Sobre</li>
         </ul>
         <div>
-          <button>Entrar</button>
-          <button>Registrar</button>
+          <button class="btnSemFundo">Entrar</button>
+          <button class="btnSimples">Registrar</button>
         </div>
       </section>
     </header>
+    <div class="line"></div>
     <main>
       <article>
-        <section>
+        <section class="sectionHero">
           <div>
-            <h1>
-              Transforme
+            <h1 class="txtChamativo">
+              Transforme <br />
               <span>a sua ideia</span>
             </h1>
             <p>
-              A plataforma mais escolhida no mundo por quem quer aprender a um
-              clique de distância.
+              A plataforma mais escolhida no mundo por <br />
+              quem quer aprender a um clique de distância.
             </p>
-            <button>Comece aqui</button>
+            <button class="btnSimples">Comece aqui</button>
           </div>
           <div>
             <img src="" alt="imagens de pessoas bem sucedidas" />
           </div>
         </section>
-        <section>
+        <section class="vendasSection d-flex justify-content-evenly my-5">
           <div>
             <h1>+200MIL</h1>
             <span> PRODUTORES VENDENDO AQUI</span>
@@ -64,25 +68,102 @@
           </div>
         </section>
       </article>
-      <article>
+      <article
+        class="p-4"
+        style="background-image: linear-gradient(to bottom, white, #e6e6e6)"
+      >
         <section>
-          <h1>Uma ampla seleção de cursos</h1>
-          <p>
-            Escolha inumeros cursos em vídeo online com novas adições publicadas
-            mensalmente
-          </p>
-          <ul>
+          <div class="mx-auto text-center my-5">
+            <h1>Uma ampla seleção de cursos</h1>
+            <p style="font-size: 16pt">
+              Escolha inumeros cursos em vídeo online com novas <br />
+              adições publicadas mensalmente
+            </p>
+          </div>
+          <ul class="d-flex gap-5">
             <li>JavaScript</li>
             <li>Php</li>
             <li>Mysql</li>
           </ul>
-          <div>
+          <div class="divCarroseu">
             <h1>Texto chamativo curso</h1>
-            <p>desc curso</p>
-            <button>Explorar Curso</button>
-            <div>
-              <!-- carrosel com os cards de cursos -->
+            <p style="max-width: 50%; font-size: 12pt">
+              Se você trabalha com machine learning ou finanças, ou está
+              buscando uma carreira em desenvolvimento web ou ciência de dados,
+              o Python é uma das habilidades mais importantes que você pode
+              aprender. A sintaxe simples do Python é especialmente adequada
+              para aplicativos de desktop, web e negócios.
+            </p>
+            <button class="btnSimples">Explorar Curso</button>
+            <div class="d-flex " style="width: 100%; justify-content: space-between;">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
             </div>
+            
           </div>
         </section>
         <section>
@@ -145,5 +226,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>
