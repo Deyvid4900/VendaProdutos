@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="index.css" />
+    <script src="./utils/JavaScript/index.js" type="module"></script>
   </head>
 
   <body>
@@ -20,23 +21,43 @@
       >
         <div>Os melhores cursos de técnologia</div>
       </section>
-      <section class="p-4 d-flex justify-content-evenly aling-content-center">
-        <img src="" alt="logo da emeb cursos" />
-        <ul class="liNavbar gap-5">
-          <li>Área de Menbros</li>
-          <li>Comprar Cursos</li>
-          <li>Ajuda</li>
-          <li>Sobre</li>
-        </ul>
-        <div>
-          <button class="btnSemFundo">Entrar</button>
-          <button class="btnSimples">Registrar</button>
+      <div id="aux" style="width: 1px"></div>
+      <section
+        class="header-main p-3 d-flex justify-content-evenly aling-content-center bg-white w-100 shadow-sm navbar navbar-expand-md"
+      >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-around" id="navbarTogglerDemo01">
+          <img
+            class="imgLogo"
+            src="assets/img/Inserir um título.jpg"
+            alt="logo da emeb cursos"
+          />
+          <ul class="liNavbar navbar-nav gap-5 flex-wrap">
+            <li class="nav-item">Área de Membros</li>
+            <li class="nav-item">Comprar Cursos</li>
+            <li class="nav-item">Ajuda</li>
+          </ul>
+          <div class="d-flex align-items-center gap-4 navbar-nav ">
+            <button id="btn" class="btnSemFundo nav-item">Entrar</button>
+            <button class="btnSimples nav-item">Registrar</button>
+          </div>
         </div>
       </section>
     </header>
     <div class="line"></div>
     <main>
-      <article>
+      <article class="">
         <section class="sectionHero">
           <div>
             <h1 class="txtChamativo">
@@ -49,11 +70,17 @@
             </p>
             <button class="btnSimples">Comece aqui</button>
           </div>
-          <div>
-            <img src="" alt="imagens de pessoas bem sucedidas" />
+          <div class="imgs img-fluid">
+            <img
+              class="img2 img-fluid"
+              src="https://hotmart.com/static/app-hotmart/images/home-organic/organic__osana-hero.webp"
+              alt="imagens de pessoas bem sucedidas"
+            />
           </div>
         </section>
-        <section class="vendasSection d-flex justify-content-evenly my-5">
+        <section
+          class="vendasSection d-flex justify-content-evenly my-5 flex-wrap gap-3 mt-3"
+        >
           <div>
             <h1>+200MIL</h1>
             <span> PRODUTORES VENDENDO AQUI</span>
@@ -80,112 +107,153 @@
               adições publicadas mensalmente
             </p>
           </div>
-          <ul class="d-flex gap-5">
-            <li>JavaScript</li>
-            <li>Php</li>
-            <li>Mysql</li>
-          </ul>
+
+          <ul class="d-flex gap-5" id="myList"></ul>
+
           <div class="divCarroseu">
             <h1>Texto chamativo curso</h1>
-            <p style="max-width: 50%; font-size: 12pt">
+            <p style="max-width: 50%">
               Se você trabalha com machine learning ou finanças, ou está
               buscando uma carreira em desenvolvimento web ou ciência de dados,
               o Python é uma das habilidades mais importantes que você pode
               aprender. A sintaxe simples do Python é especialmente adequada
               para aplicativos de desktop, web e negócios.
             </p>
-            <button class="btnSimples">Explorar Curso</button>
-            <div class="d-flex " style="width: 100%; justify-content: space-between;">
-              <div class="card" style="width: 18rem">
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button class="btnSimples">Explorar Cursos</button>
+            <div
+              id="carrosel"
+              class="p-5 gap-5"
+              style="
+                display: flex;
+                min-height: 300px;
+                width: 100%;
+                justify-content: space-around;
+                overflow-x: scroll;
+              "
+            >
+              <div class="course-card" data-purpose="container">
+                <div class="course-card-image">
+                  <img
+                    src="https://img-c.udemycdn.com/course/240x135/1831892_7def_4.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
                 </div>
-              </div>
-              <div class="card" style="width: 18rem">
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem">
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem">
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem">
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem">
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="course-card-content">
+                  <div class="course-card-title">
+                    <h3>
+                      <a
+                        href="/course/introducao-a-programacao-de-computadores/"
+                        >Introdução à programação de computadores</a
+                      >
+                    </h3>
+                  </div>
+                  <div class="course-card-instructor">
+                    Instrutor: <span>Diego Mariano, Ph.D.</span>
+                  </div>
+                  <div class="course-card-ratings">
+                    <span class="star-rating">
+                      Classificação: <span>4,7</span> (9571 avaliações)
+                    </span>
+                  </div>
+                  <div class="course-card-price">
+                    Preço atual: <span>R$139,90</span>
+                  </div>
                 </div>
               </div>
             </div>
-            
           </div>
         </section>
-        <section>
+        <section class="my-5">
           <h1>Mais vizualizados</h1>
           <div>
             <!-- carrosel com os cards de cursos -->
           </div>
         </section>
-        <section>
-          <h1>Principais categorias</h1>
-          <div>Front-end</div>
-          <div>Back-end</div>
-          <div>Banco de dados</div>
-          <div>Desenvolvimento web</div>
-          <div>Desenvolvimento nativo</div>
-          <div>Full-stack</div>
+        <section class="bg-white p-5">
+          <h1>Principais cursos</h1>
+          <div
+            class="p-5 gap-5 mx-auto"
+            style="
+              display: flex;
+              width: 60%;
+              justify-content: space-around;
+              align-items: center;
+              overflow-x: scroll;
+            "
+          >
+            <div class="course-card" data-purpose="container">
+              <div class="course-card-image">
+                <img
+                  src="https://img-c.udemycdn.com/course/240x135/1831892_7def_4.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="course-card-content">
+                <div class="course-card-title">
+                  <h3>
+                    <a href="/course/introducao-a-programacao-de-computadores/"
+                      >Introdução à programação de computadores</a
+                    >
+                  </h3>
+                </div>
+                <div class="course-card-instructor">
+                  Instrutor: <span>Diego Mariano, Ph.D.</span>
+                </div>
+                <div class="course-card-ratings">
+                  <span class="star-rating">
+                    Classificação: <span>4,7</span> (9571 avaliações)
+                  </span>
+                </div>
+                <div class="course-card-price">
+                  Preço atual: <span>R$139,90</span>
+                </div>
+              </div>
+            </div>
+            <div class="course-card" data-purpose="container">
+              <div class="course-card-image">
+                <img
+                  src="https://img-c.udemycdn.com/course/240x135/1831892_7def_4.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="course-card-content">
+                <div class="course-card-title">
+                  <h3>
+                    <a href="/course/introducao-a-programacao-de-computadores/"
+                      >Introdução à programação de computadores</a
+                    >
+                  </h3>
+                </div>
+                <div class="course-card-instructor">
+                  Instrutor: <span>Diego Mariano, Ph.D.</span>
+                </div>
+                <div class="course-card-ratings">
+                  <span class="star-rating">
+                    Classificação: <span>4,7</span> (9571 avaliações)
+                  </span>
+                </div>
+                <div class="course-card-price">
+                  Preço atual: <span>R$139,90</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </article>
       <article>
-        <section>
-          <div>
-            <span>Emeb Business</span>
+        <section class="flex-wrap my-5  p-5 d-flex align-items-center justify-content-evenly">
+          <div
+            style="text-align: start; width: 500px; flex-direction: column"
+            class="d-flex gap-2"
+          >
+            <img
+              width="200px"
+              src="assets/img/Inserir um título.jpg"
+              alt="logo da emeb cursos"
+            />
             <h1>Requalifique sua equipe com a Emeb Business</h1>
             <ul>
               <li>
@@ -195,27 +263,54 @@
               <li>Principais certificações de tecnologia e negócios</li>
             </ul>
             <div>
-              <button>Obtenha</button>
-              <button>Saiba mais</button>
+              <button
+                style="
+                  width: 140px;
+                  height: 40px;
+                  background-color: white;
+                  color: var(--color-ocean-green);
+                  border: 1px, solid, var(--color-ocean-green);
+                  border-radius: 20px;
+                "
+              >
+                Saiba mais
+              </button>
+              <button class="btnSimples">Obtenha</button>
             </div>
           </div>
-          <img src="" alt="" />
+          <img
+            width="400px"
+            src="https://s.udemycdn.com/home/non-student-cta/UB_Promo_800x800.jpg"
+            alt=""
+          />
         </section>
-        <section>
-          <img src="" alt="" />
-          <div>
+        <section class="flex-wrap p-5 d-flex align-items-center justify-content-evenly">
+          <img
+            width="400px"
+            src="https://s.udemycdn.com/home/non-student-cta/instructor-1x-v3.jpg"
+            alt=""
+          />
+          <div
+            style="text-align: start; width: 500px; flex-direction: column"
+            class="d-flex gap-2 my-5"
+          >
             <h1>Torne-se um instrutor</h1>
-            <p>
-              Instrutores de todo o mundo lecionam a centenas de alunos na emeb.
-              Oferecemos as ferramentas e habilidades para ensinar o que você
-              ama.
-            </p>
-            <button>Comece a ensinar</button>
+            <ul>
+              <li>
+                Instrutores de todo o mundo lecionam a milhões de alunos na
+                Udemy. Oferecemos as ferramentas e habilidades para ensinar o
+                que você ama.
+              </li>
+              <li>Principais certificações de tecnologia e negócios</li>
+            </ul>
+            <div>
+              <button class="btnSimples">Obtenha o business</button>
+            </div>
           </div>
         </section>
       </article>
     </main>
-    <footer>
+    <footer class="p-3 text-bg-dark">
       <div>
         <img src="" alt="" />
         <span>© 2024 emeb, Inc.</span>
@@ -226,6 +321,35 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var headerSection = document.querySelector(".sectionHeaderDesc");
+        var mainHeader = document.querySelector(".header-main");
+        var aux = document.querySelector("#aux");
+
+        if (!headerSection || !mainHeader) {
+          console.error("Não foi possível encontrar os elementos do header.");
+          return;
+        }
+
+        var headerHeight = headerSection.clientHeight;
+
+        function handleScroll() {
+          // Calcula a posição vertical em que o segundo section deve começar a fixar
+          var startFixingAt = headerHeight;
+
+          // Verifica se o scroll passou da posição onde o segundo section deve começar a fixar
+          if (window.scrollY > startFixingAt) {
+            mainHeader.classList.add("fixed-header");
+            aux.style.marginBottom = headerHeight + "px"; // Define a altura dinamicamente para aux
+          } else {
+            mainHeader.classList.remove("fixed-header");
+            aux.style.marginBottom = "auto"; // Restaura a altura para o valor padrão (auto)
+          }
+        }
+
+        window.addEventListener("scroll", handleScroll);
+      });
+    </script>
   </body>
 </html>
