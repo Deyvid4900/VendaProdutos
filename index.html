@@ -37,19 +37,24 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-around" id="navbarTogglerDemo01">
+        <div
+          class="collapse navbar-collapse justify-content-around"
+          id="navbarTogglerDemo01"
+        >
           <img
             class="imgLogo"
             src="assets/img/Inserir um título.jpg"
             alt="logo da emeb cursos"
           />
-          <ul class="liNavbar navbar-nav gap-5 flex-wrap">
+          <ul class="liNavbar navbar-nav gap-5 flex-wrap p-4">
             <li class="nav-item">Área de Membros</li>
             <li class="nav-item">Comprar Cursos</li>
             <li class="nav-item">Ajuda</li>
           </ul>
-          <div class="d-flex align-items-center gap-4 navbar-nav ">
-            <button id="btn" class="btnSemFundo nav-item">Entrar</button>
+          <div class="d-flex align-items-center gap-4 navbar-nav">
+            <a href="http://127.0.0.1:5500/pages/login.pages/login.html">
+              <button id="btn" class="btnSemFundo nav-item">Entrar</button>
+            </a>
             <button class="btnSimples nav-item">Registrar</button>
           </div>
         </div>
@@ -165,7 +170,6 @@
           </div>
         </section>
         <section class="my-5">
-          <h1>Mais vizualizados</h1>
           <div>
             <!-- carrosel com os cards de cursos -->
           </div>
@@ -243,11 +247,13 @@
           </div>
         </section>
       </article>
-      <article>
-        <section class="flex-wrap my-5  p-5 d-flex align-items-center justify-content-evenly">
+      <article class="" style="font-size: 1rem">
+        <section
+          class="flex-wrap my-5 pt-5 d-flex align-items-center justify-content-evenly"
+        >
           <div
             style="text-align: start; width: 500px; flex-direction: column"
-            class="d-flex gap-2"
+            class="d-flex gap-2 align-items-start mx-50"
           >
             <img
               width="200px"
@@ -255,7 +261,10 @@
               alt="logo da emeb cursos"
             />
             <h1>Requalifique sua equipe com a Emeb Business</h1>
-            <ul>
+            <ul
+              class="instrutorTxt d-flex flex-column justify-content-center"
+              style="padding-left: 0px"
+            >
               <li>
                 Acesso ilimitado aos principais cursos da Udemy a qualquer hora
                 e lugar
@@ -284,7 +293,9 @@
             alt=""
           />
         </section>
-        <section class="flex-wrap p-5 d-flex align-items-center justify-content-evenly">
+        <section
+          class="flex-wrap pb-5 d-flex align-items-center justify-content-evenly"
+        >
           <img
             width="400px"
             src="https://s.udemycdn.com/home/non-student-cta/instructor-1x-v3.jpg"
@@ -292,10 +303,13 @@
           />
           <div
             style="text-align: start; width: 500px; flex-direction: column"
-            class="d-flex gap-2 my-5"
+            class="d-flex gap-2 my-5 p-3 align-items-start mx-50"
           >
             <h1>Torne-se um instrutor</h1>
-            <ul>
+            <ul
+              class="instrutorTxt d-flex flex-column justify-content-center"
+              style="padding-left: 0px"
+            >
               <li>
                 Instrutores de todo o mundo lecionam a milhões de alunos na
                 Udemy. Oferecemos as ferramentas e habilidades para ensinar o

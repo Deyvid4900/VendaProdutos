@@ -63,3 +63,4 @@ window.addEventListener("load", async function () {
         // Tratar o erro adequadamente, por exemplo, mostrar uma mensagem de erro ao usuário
     }
 });
+
