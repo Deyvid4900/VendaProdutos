@@ -40,6 +40,26 @@ async function statusServidor(){
       console.error("Ocorreu um erro:", error);
     }
   }
+  export async function listarMelhores(){
+    const URL = "http://localhost:3000/cursos/melhores";
+    try {
+      const response = await fetch(URL, {
+        method: "GET",
+        mode: 'cors',
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Content-Type': 'application/json',
+        }
+      });
+  
+      const produtos = await response.json();
+      // console.log(produtos);
+      return produtos;
+  
+    } catch (error) {
+      console.error("Ocorreu um erro:", error);
+    }
+  }
 
   export async function listarProdutos10(){
     const URL = "http://localhost:3000/cursos/10";

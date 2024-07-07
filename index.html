@@ -52,10 +52,11 @@
             <li class="nav-item">Ajuda</li>
           </ul>
           <div class="d-flex align-items-center gap-4 navbar-nav">
-            <a href="http://127.0.0.1:5500/pages/login.pages/login.html">
-              <button id="btn" class="btnSemFundo nav-item">Entrar</button>
+            <a href="/pages/login.pages/login.html">
+              <button id="btn" class="btnSemFundo nav-item">Entrar</button> </a
+            ><a href="/pages/register.pages/register.html">
+              <button class="btnSimples nav-item">Registrar</button>
             </a>
-            <button class="btnSimples nav-item">Registrar</button>
           </div>
         </div>
       </section>
@@ -115,8 +116,8 @@
 
           <ul class="d-flex gap-5" id="myList"></ul>
 
-          <div class="divCarroseu">
-            <h1>Texto chamativo curso</h1>
+          <div class="divCarroseu" >
+            <h1>Amplie suas oportunidades </h1>
             <p style="max-width: 50%">
               Se você trabalha com machine learning ou finanças, ou está
               buscando uma carreira em desenvolvimento web ou ciência de dados,
@@ -127,7 +128,7 @@
             <button class="btnSimples">Explorar Cursos</button>
             <div
               id="carrosel"
-              class="p-5 gap-5"
+              class="p-5 gap-5 carroselScroll"
               style="
                 display: flex;
                 min-height: 300px;
@@ -169,20 +170,40 @@
             </div>
           </div>
         </section>
-        <section class="my-5">
-          <div>
-            <!-- carrosel com os cards de cursos -->
+      </article>
+      <section class="sectionBlack mv-5">
+        <div class="bg-dark text-white d-flex justify-content-evenly align-items-center flex-column" style="text-align: center;">
+          <h1>Quanto antes você começar melhor</h1>
+          <div  style="" class="d-flex ulBlack justify-content-center flex-wrap">
+            <div>              
+              <h2>Não precisa de <br> investimento inical</h2>
+              <p>Na Hotmart você não paga nada pra começar.</p>
+            </div>
+            <div>
+              
+              <h2>Não precisa de <br> muitos seguidores</h2>
+              <p>A maioria dos produtores começa assim.</p>
+            </div>
+            <div>
+              
+              <h2>Não precisa de  <br>desenvolvedores</h2>
+              <p>Nada de programação. Fácil, intuitivo e com auxílio de AI.</p>
+            </div>
           </div>
-        </section>
+          <button class="btnSimples">Comece Agora</button>
+        </div>
+      </section>
+      <articl class="mb-5">
         <section class="bg-white p-5">
-          <h1>Principais cursos</h1>
+          <h1>Melhores avaliados</h1>
           <div
-            class="p-5 gap-5 mx-auto"
+            id="carroselMelhores"
+            class="p-5 gap-5 carroselScroll"
             style="
               display: flex;
-              width: 60%;
+              min-height: 300px;
+              width: 100%;
               justify-content: space-around;
-              align-items: center;
               overflow-x: scroll;
             "
           >
@@ -215,45 +236,20 @@
                 </div>
               </div>
             </div>
-            <div class="course-card" data-purpose="container">
-              <div class="course-card-image">
-                <img
-                  src="https://img-c.udemycdn.com/course/240x135/1831892_7def_4.jpg"
-                  alt=""
-                  loading="lazy"
-                />
-              </div>
-              <div class="course-card-content">
-                <div class="course-card-title">
-                  <h3>
-                    <a href="/course/introducao-a-programacao-de-computadores/"
-                      >Introdução à programação de computadores</a
-                    >
-                  </h3>
-                </div>
-                <div class="course-card-instructor">
-                  Instrutor: <span>Diego Mariano, Ph.D.</span>
-                </div>
-                <div class="course-card-ratings">
-                  <span class="star-rating">
-                    Classificação: <span>4,7</span> (9571 avaliações)
-                  </span>
-                </div>
-                <div class="course-card-price">
-                  Preço atual: <span>R$139,90</span>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
-      </article>
+      </articl>
+      <!-- background-image: linear-gradient(to bottom, white, rgb(224, 224, 224)) -->
+      <div style="height: 100px; background-image: linear-gradient(to top, white, rgb(224, 224, 224))">
+        
+      </div>
       <article class="" style="font-size: 1rem">
         <section
           class="flex-wrap my-5 pt-5 d-flex align-items-center justify-content-evenly"
         >
           <div
             style="text-align: start; width: 500px; flex-direction: column"
-            class="d-flex gap-2 align-items-start mx-50"
+            class="d-flex gap-2 p-3 align-items-start mx-50"
           >
             <img
               width="200px"

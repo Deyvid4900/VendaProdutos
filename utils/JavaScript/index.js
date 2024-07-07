@@ -1,10 +1,12 @@
 import {
     listarProdutos10,
     pegar5Categorias,
+    listarMelhores,
     pegarPorCategoria
 } from "./modulos/callApi.js";
 import {
     criarCard,
+    criarCardMelhores,
     ulCategorias
 } from "./modulos/dom.js";
 
@@ -14,15 +16,17 @@ window.addEventListener("load", async function () {
     try {
         let categorias = await pegar5Categorias();
         let cursos = await listarProdutos10();
+        let melhoresCursos = await listarMelhores(); 
 
 
         // Manipulando categorias
         categorias.forEach(categoria => {
             ulCategorias(categoria.categoriaCurso);
         });
-
+        
         const lista = document.querySelector('#myList'); // Seleciona o elemento UL com o ID 'myList'
-        const carrosel = document.querySelector('#carrosel'); // Seleciona o elemento UL com o ID 'carrosel'
+        const carrosel = document.querySelector('#carrosel');
+        const carroselMelhores = document.querySelector('#carroselMelhores'); // Seleciona o elemento UL com o ID 'carrosel'
         const children = Array.from(lista.children); // Obtém uma lista dos elementos filhos do UL
 
 
@@ -55,7 +59,11 @@ window.addEventListener("load", async function () {
 
         // Manipulando cursos
         cursos.forEach(curso => {
-            criarCard(curso.imgCurso, curso.descricaoCurso, curso.valorCurso, curso.criadorCurso);
+            criarCard(curso.imgCurso, curso.descricaoCurso, curso.valorCurso, curso.criadorCurso,curso.mediaPontuacao);
+        });
+
+        melhoresCursos.forEach(curso => {
+            criarCardMelhores(curso.imgCurso, curso.descricaoCurso, curso.valorCurso, curso.criadorCurso,curso.mediaPontuacao);
         });
 
     } catch (error) {
