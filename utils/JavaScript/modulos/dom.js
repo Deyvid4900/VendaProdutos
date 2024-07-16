@@ -11,6 +11,7 @@ export const criarCard = (imagem, desc, valor, criador,mediaAvaliacao) => {
     const img = document.createElement('img');
     img.setAttribute('src', imagem);
     img.setAttribute('alt', '');
+    img.setAttribute('style', 'width:-webkit-fill-available;;');
     img.setAttribute('loading', 'lazy');
     divImage.appendChild(img);
 
@@ -78,6 +79,7 @@ export const criarCardMelhores = (imagem, desc, valor, criador,mediaAvaliacao) =
     const img = document.createElement('img');
     img.setAttribute('src', imagem);
     img.setAttribute('alt', '');
+    img.setAttribute('', 'auto');
     img.setAttribute('loading', 'lazy');
     divImage.appendChild(img);
 

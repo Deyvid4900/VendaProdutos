@@ -125,9 +125,10 @@ li {
 }
 
 .course-card-image>img {
-  width: 400px;
+  min-width: 400px;
   height: 200px;
   border: 1px solid rgb(241, 241, 241);
+  
 }
 
 .course-card-title {
@@ -142,6 +143,7 @@ li {
 .course-card-title a {
   color: #333;
   text-decoration: none;
+  
 }
 
 .course-card-title a:hover {

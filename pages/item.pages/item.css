@@ -30,7 +30,8 @@
 
 .stars {
     font-size: 16px;
-    color: #f39c12; /* cor para as estrelas */
+    color: #f39c12;
+    /* cor para as estrelas */
 }
 
 .timestamp {
@@ -58,7 +59,8 @@
 .report-btn,
 .helpful-btn,
 .not-helpful-btn {
-    background-color: #3498db; /* cor de fundo dos botões */
+    background-color: #3498db;
+    /* cor de fundo dos botões */
     color: #fff;
     border: none;
     padding: 8px 12px;
@@ -71,6 +73,24 @@
 .report-btn:hover,
 .helpful-btn:hover,
 .not-helpful-btn:hover {
-    background-color: #2980b9; /* cor de fundo ao passar o mouse */
+    background-color: #2980b9;
+    /* cor de fundo ao passar o mouse */
 }
 
+
+
+@media only screen and (max-width: 1000px) {
+    .itemImg {
+        position: unset !important;
+        padding: 3rem !important;
+    }
+    .articleHero{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@media only screen and (min-width: 767.98px) {
+   
+}
