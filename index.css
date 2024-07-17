@@ -3,6 +3,7 @@
   --color-maximum-blue: #4DB4D7;
   --color-ocean-boat-blue: #0076BE;
   --color-ocean-green: #48BF91;
+  --color-ocean-green-dark: #348667;
   --color-middle-blue-green: #8BD9C7;
 }
 
@@ -42,6 +43,10 @@ li {
   color: white;
   border: none;
   border-radius: 20px;
+  transition: 0.5s;
+}
+.btnSimples:hover{
+  background-color: var(--color-ocean-green-dark);
 }
 
 .btnSemFundo {
@@ -51,6 +56,11 @@ li {
   color: var(--color-ocean-green);
   border: 1px, solid, var(--color-ocean-green);
   border-radius: 20px;
+}
+
+.btnSemFundo:hover{
+  background-color: var(--color-ocean-green);
+  color: white;
 }
 
 .sectionHeaderDesc {
