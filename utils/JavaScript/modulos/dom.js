@@ -1,4 +1,4 @@
-export const criarCard = (imagem, desc, valor, criador,mediaAvaliacao) => {
+export const criarCard = (imagem, desc, valor, criador,mediaAvaliacao,id) => {
     // Criação do elemento <div> principal com a classe "card" e estilo "width: 400px"
     const carrosel = document.getElementById('carrosel')
     // Criando os elementos HTML
@@ -22,7 +22,7 @@ export const criarCard = (imagem, desc, valor, criador,mediaAvaliacao) => {
     divTitle.classList.add('course-card-title');
     const h3 = document.createElement('h3');
     const a = document.createElement('a');
-    a.setAttribute('href', '/course/introducao-a-programacao-de-computadores/');
+    a.setAttribute('href', '/pages/item.pages/item.html?id='+id);
     a.textContent = desc;
     h3.appendChild(a);
     divTitle.appendChild(h3);
@@ -66,7 +66,7 @@ export const criarCard = (imagem, desc, valor, criador,mediaAvaliacao) => {
 
 }
 
-export const criarCardMelhores = (imagem, desc, valor, criador,mediaAvaliacao) => {
+export const criarCardMelhores = (imagem, desc, valor, criador,mediaAvaliacao,id) => {
     // Criação do elemento <div> principal com a classe "card" e estilo "width: 400px"
     const carrosel = document.getElementById('carroselMelhores')
     // Criando os elementos HTML
@@ -90,7 +90,7 @@ export const criarCardMelhores = (imagem, desc, valor, criador,mediaAvaliacao) =
     divTitle.classList.add('course-card-title');
     const h3 = document.createElement('h3');
     const a = document.createElement('a');
-    a.setAttribute('href', '/course/introducao-a-programacao-de-computadores/');
+    a.setAttribute('href',  '/pages/item.pages/item.html?id='+id);
     a.textContent = desc;
     h3.appendChild(a);
     divTitle.appendChild(h3);

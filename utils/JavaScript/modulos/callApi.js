@@ -124,25 +124,25 @@ async function statusServidor(){
     }
   }
 
-//   async function buscarProdutoPorId(codigo){
-//     const URL = "http://localhost:3000/produto?id="+ codigo;
-//     try {
-//       const response = await fetch(URL, {
-//         method: "GET",
-//         mode: 'cors',
-//         headers: {
-//           'Access-Control-Allow-Origin': '*',
-//           'Content-Type': 'application/json',
-//         }
-//       });
+  async function buscarProdutoPorId(codigo){
+    const URL = "http://localhost:3000/curso?id="+ codigo;
+    try {
+      const response = await fetch(URL, {
+        method: "GET",
+        mode: 'cors',
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Content-Type': 'application/json',
+        }
+      });
   
-//       const produto = await response.json();
-//       return produto;
+      const produto = await response.json();
+      return produto;
   
-//     } catch (error) {
-//       console.error("Ocorreu um erro:", error);
-//     }
-//   }
+    } catch (error) {
+      console.error("Ocorreu um erro:", error);
+    }
+  }
   
 //   async function salvar(produto){
 //     const URL = "http://localhost:3000";

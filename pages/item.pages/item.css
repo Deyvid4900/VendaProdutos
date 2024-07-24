@@ -89,8 +89,24 @@
     width: 60%;
     min-width: 300px;
 }
+.comentarioCursoDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5%;
+    width: 60%;
+    margin-top: 20px;
+    min-width: 300px;
+}
+
 .articleHero>section>div>h5{
     color: #a8a8a8;
+}
+
+.li>ul>li{list-style: initial !important;}
+.desc{
+    font-size: smaller;
 }
 
 

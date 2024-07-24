@@ -46,7 +46,7 @@ window.addEventListener("load", async function () {
                     console.log('Cursos por categoria:', cursoPorCategoria);
 
                     cursoPorCategoria.forEach(curso => {
-                        criarCard(curso.imgCurso, curso.descricaoCurso, curso.valorCurso, curso.criadorCurso);
+                        criarCard(curso.imgCurso, curso.descricaoCurso, curso.valorCurso, curso.criadorCurso,curso.id);
                     });
                 } catch (error) {
                     console.error('Erro ao carregar cursos por categoria:', error);
@@ -59,11 +59,11 @@ window.addEventListener("load", async function () {
 
         // Manipulando cursos
         cursos.forEach(curso => {
-            criarCard(curso.imgCurso, curso.descricaoCurso, curso.valorCurso, curso.criadorCurso,curso.mediaPontuacao);
+            criarCard(curso.imgCurso, curso.descricaoCurso, curso.valorCurso, curso.criadorCurso,curso.mediaPontuacao,curso.id);
         });
 
         melhoresCursos.forEach(curso => {
-            criarCardMelhores(curso.imgCurso, curso.descricaoCurso, curso.valorCurso, curso.criadorCurso,curso.mediaPontuacao);
+            criarCardMelhores(curso.imgCurso, curso.descricaoCurso, curso.valorCurso, curso.criadorCurso,curso.mediaPontuacao,curso.id);
         });
 
     } catch (error) {
