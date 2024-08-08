@@ -78,7 +78,7 @@
 }
 
 
-.conteudoCursoDiv{
+.conteudoCursoDiv {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,7 +89,8 @@
     width: 60%;
     min-width: 300px;
 }
-.comentarioCursoDiv{
+
+.comentarioCursoDiv {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,12 +101,15 @@
     min-width: 300px;
 }
 
-.articleHero>section>div>h5{
+.articleHero>section>div>h5 {
     color: #a8a8a8;
 }
 
-.li>ul>li{list-style: initial !important;}
-.desc{
+.li>ul>li {
+    list-style: initial !important;
+}
+
+.desc {
     font-size: smaller;
 }
 
@@ -114,25 +118,54 @@
     .itemImg {
         position: unset !important;
         padding: .5rem !important;
+        margin-top: 40px !important;
     }
-    .articleHero{
+
+    .articleHero {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap-reverse;
     }
-    .sectionDark{
+
+    .sectionDark {
         padding: .1rem;
     }
-    .articleHero:first-child div{
+
+    .articleHero:first-child div {
         padding: .1rem !important;
     }
-    .articleHero>section>div>h5{
+
+    .articleHero>section>div>h5 {
         max-width: 100vw !important;
         color: #a8a8a8;
         font-size: medium;
     }
+
+    iframe {
+        margin: auto !important;
+        width: 90vw !important;
+    }
+
+    .divIframe {
+        text-align: center;
+    }
+    .comentarioCursoDiv{
+        width: unset !important;
+        margin: unset !important;
+    }
+    .conteudoCursoDiv {
+        width: 90vw !important;
+        margin: 40px auto !important;
+    }
+    .comentarioSec{
+        text-align: center !important;
+        margin: 50px auto !important;
+        height: 600px;
+        overflow: auto;
+    }
+    .review-card{
+        width: 88vw !important;
+    }
 }
 
-@media only screen and (min-width: 767.98px) {
-   
-}
+@media only screen and (min-width: 767.98px) {}
